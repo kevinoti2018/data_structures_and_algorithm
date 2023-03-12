@@ -247,3 +247,14 @@ start at first element of array and move towards the last
 at each element, check if the element is equal to the target value
 if element found return index of element.
 if not return -1
+
+
+binary search
+given a sorted array of'n' elements and a target element 't' find the index of t i the array. return -1 if target element is not found
+
+pseudocode
+
+if the array is empty return -1
+if the array has elements , find the middle element in the array.if target is equal to the middle element return its index
+if target is less than the middle element, binary search left half of array
+if target is greater tgan mid element, binary search right half of the array

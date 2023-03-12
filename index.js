@@ -9,7 +9,7 @@ function fibonacci(n){
     return fib
 }
 // O(n)
-console.log(fibonacci(3))
+// console.log(fibonacci(3))
 // console.log(fibonacci(9))
 // console.log(fibonacci(5))
 
@@ -86,7 +86,7 @@ function isPowerofTwoBitwise(n){
 // console.log(isPowerofTwoBitwise(8));
 
 // Recursie fibonacci sequence
-//  given a number 'n' , find the nth wlwmwnt of the fibonacci sequence
+//  given a number 'n' , find the nth element of the fibonacci sequence
 
 function recursiveFibonacci(n){
     if(n<2){
@@ -97,7 +97,7 @@ function recursiveFibonacci(n){
 // O(2^n)
 
 
-console.log(recursiveFibonacci(9));
+// console.log(recursiveFibonacci(9));
 
 
 // recusrive factorial
@@ -120,15 +120,17 @@ function factorialRecursive(n){
 // Search algorithm
 // linear  search
 // given an array of n elements and a target of t find the value of tin the array. return -1 if element t is not found.
-function linearSearch(arr,target){
-    for(let i=0; i<arr.length; i++){
-        if(arr[i]==target){
-            return i
+function linearSearch(arr, target){
+    for(let i=0; i<= arr.length; i++){
+        if(arr[i]===target){
+            return i;
         }
-        return -1
     }
-    
+    return -1;
 }
-console.log([5,7,3],7);
-console.log([4,77,90,3],77)
+console.log(linearSearch([5,7,3],3));
+console.log(linearSearch([4,5,9,77,90,3],77))
 // O(n)
+
+
+// binary search
