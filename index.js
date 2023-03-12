@@ -128,9 +128,29 @@ function linearSearch(arr, target){
     }
     return -1;
 }
-console.log(linearSearch([5,7,3],3));
-console.log(linearSearch([4,5,9,77,90,3],77))
+// console.log(linearSearch([5,7,3],3));
+// console.log(linearSearch([4,5,9,77,90,3],77))
 // O(n)
 
 
 // binary search
+
+function binarySearch(arr,target){
+    let leftIndex = 0
+    let rightIndex = arr.length -1
+    while(leftIndex <= rightIndex){
+        let middleIndex = Math.floor((leftIndex + rightIndex)/2)
+        if(arr[middleIndex] == target){
+            return middleIndex
+        }
+        if(target < arr[middleIndex]){
+            rightIndex = middleIndex-1
+        }else{
+            leftIndex= middleIndex +1
+        }
+    }
+    return -1
+}
+// O(logn)
+
+console.log(binarySearch([3,4,5,9,77,90,],90))
